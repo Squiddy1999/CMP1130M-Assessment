@@ -1,0 +1,164 @@
+﻿body {
+    background-color: #242325;
+    background: repeating-linear-gradient( 45deg, #242325, #242325 10px, #665749 10px, #665749 20px );
+}
+
+.bgcolour {
+    background-color: #F4E3D9;
+}
+
+header {
+    display:block;
+    overflow:hidden;
+    float: right;
+    box-sizing:border-box;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#nav_menu {
+    display: block;
+    width:100%;
+    height:auto;
+}
+
+nav {
+    display: block;
+    overflow: hidden;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+
+}
+
+nav li {
+    display:inline;
+}
+
+nav li a {
+    display: inline;
+    margin-right: 4rem;
+    padding: 1rem 0.5rem;
+    font: 1.2rem CubanoRegular, Arial, Helvetica, Sans-Serif;
+    font-weight:bold;
+    text-decoration:none;
+    color:black;
+}
+
+#logo {
+    display: block;
+    float: left;
+    top: 1%;
+    height: 100%;
+    width:auto;
+}
+
+#about_section {
+    display:block;
+    top: 30%;
+    border-radius: 4px;
+}
+
+#listen_section {
+    display:block;
+    top: 60%;
+}
+
+.section {
+    display: block;
+    font: 1.5rem CubanoRegular, Arial, Helvetica, Sans-Serif;
+    border-top: solid;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+
+#slideshow {
+    display:block;
+    margin: auto;
+    width:100%;
+    height: auto;
+    max-height: 442px;
+}
+
+#slideshow-background {
+    background-color: #DC965A;
+    max-height: 25%;
+    padding: 10px;
+}
+
+.slideshow_picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.flexslider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.flexslider .slides img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    max-width:1440px;
+}
+
+.flex-control-nav {
+    bottom: 20px;
+}
+
+#about_section {
+    display: inline-block;
+    width: 43.6%;
+    height: auto;
+    padding: 30px 3.15% 0;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    border-bottom: solid;
+    border-right:solid;
+    float: left;
+}
+
+#listen_section {
+    display: inline-block;
+    width: 43%;
+    height: auto;
+    vertical-align: top;
+    padding: 30px 3.15% 0;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    float: right;
+    border-left: solid;
+    border-bottom:solid;
+}
+
+.music_section {
+    margin-top: 1000px;
+}
+
+#musicTable {
+    width:100%;
+    height:auto;
+    height: auto;
+    text-align: center;
+}
+
+#musicTable td {
+    height: 42%;
+}
+
+td img {
+    width: 350px;
+    height: 350px;
+}
+
