@@ -471,11 +471,16 @@ input[type=submit] {
 
     #mobile_nav li {
         padding: 0.5vh;
-        margin-bottom: 1.5vh;
+        padding-top :0px;
+        margin-bottom: 1vh;
         border: solid 10px;
         background-color: #DC965A;
         width: 90vw;
         text-align: center;
+    }
+
+    #mobile_nav ul {
+        margin-top:2vh;
     }
 
     #mobile_nav a {
