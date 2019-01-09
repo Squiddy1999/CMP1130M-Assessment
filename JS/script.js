@@ -8,19 +8,17 @@ $(document).ready(function () {
     //console.log(spotifyJSON);
     var data = JSON.parse(spotifyJSON);
     //console.log(data);
-    var items = data.items;
+    items = data.items;
     var audioObject;
 
     $.each(items, function (index) {
         var id = items[index].id;
         var name = items[index].name;
-        var track = items[index].track;
-        //console.log(id, track);
-        
+        var track = items[index].preview_url;        
     })
 
-    audioObject = new Audio("https://api.spotify.com/v1/tracks/22qq6z2woVbKj4MbtzGFgX");
-    audioObject.play();
+    //audioObject = new Audio("https://p.scdn.co/mp3-preview/fa8bcc44b75078b9378ab82d7922dc7b1403ee77?cid=774b29d4f13844c495f206cafdad9c86");
+    
 
 
     nowPlaying = "null";
@@ -41,13 +39,24 @@ function customiserBtn() {
 function musicPreview() {
     $(".song").click(function () {
         if (nowPlaying == "null") {
-            nowPlaying = $(this);
-            $(this).css("font-weight", "bold");
+            songItem = $(this);
+            nowPlaying = ($(this).attr('id'));
+            nowPlaying = nowPlaying.substring(4);
+            console.log("Now playing track "+nowPlaying);
+            $(this).css({ "font-weight": "bold", "list-style-image": "url('Assets/triangle.jpg')" });
+            audioObject = new Audio(items[parseInt(nowPlaying, 10) - 1].preview_url);
+            audioObject.play();
         }
         else {
-            $(nowPlaying).css("font-weight", "normal");
-            nowPlaying = $(this);
-            $(this).css("font-weight", "bold");
+            audioObject.pause();
+            $(songItem).css({ "font-weight": "normal","list-style":"none"});
+            songItem = $(this);
+            nowPlaying = ($(this).attr('id'));
+            nowPlaying = nowPlaying.substring(4);
+            console.log("Now playing track "+nowPlaying);
+            $(this).css({"font-weight": "bold","list-style-image": "url('Assets/triangle.jpg')"});
+            audioObject = new Audio(items[parseInt(nowPlaying,10)-1].preview_url);
+            audioObject.play();
         }
 
     });

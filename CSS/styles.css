@@ -48,9 +48,13 @@ nav li a {
     display: inline;
     margin-right: 4rem;
     padding: 1rem 0.5rem;
+    padding-top:0px;
+    padding-bottom:0px;
     font: 1.2rem CubanoRegular, Arial, Helvetica, Sans-Serif;
     font-weight:bold;
     text-decoration:none;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
     color:black;
 }
 
@@ -124,8 +128,8 @@ nav li a {
 
 #about_section {
     display: inline-block;
-    width: 47vw;
-    height: 50vh;
+    width: 47.2vw;
+    height: 48vh;
     border-bottom: solid;
     border-right:solid;
     float: left;
@@ -136,8 +140,8 @@ nav li a {
 
 #listen_section {
     display: inline-block;
-    width: 47vw;
-    height: 50vh;
+    width: 47.2vw;
+    height: 48vh;
     vertical-align: top;
     float: right;
     border-left: solid;
@@ -185,9 +189,26 @@ nav li a {
     height: 42%;
 }
 
-td img {
+#musicTable td img {
     width: 300px;
     height: 300px;
+    border:groove;
+    border-color:#242325
+}
+
+#merchTable {
+    width: 100%;
+    height: auto;
+    height: auto;
+    text-align: center;
+}
+
+#merchTable td img {
+    width: auto;
+    height:30vh;
+    border:groove;
+    border-color: #242325;
+    padding: 10px;
 }
 
 #create_album_button_section h1 {
@@ -212,4 +233,86 @@ td img {
     background-color: #DC965A;
     border-top: solid;
     border-bottom: solid;
+}
+
+#concerts_section {
+    overflow:hidden;
+}
+
+#concerts_section table {
+    padding-left: 10vw;
+}
+
+.date_heading {
+    font-weight: bold;
+    font-size: 32px;
+    border-bottom: solid;
+}
+
+.venue_heading {
+    font-weight: bold;
+    font-size: 32px;
+    color: #CC864A;
+    border-bottom: solid;
+}
+
+.buy_tickets_button_heading {
+    
+}
+
+.date {
+    padding-right: 5vw;
+    border-bottom: solid;
+}
+
+.venue {
+    padding-right: 40vw;
+    color: #CC864A;
+    border-bottom: solid;
+}
+
+.buy_tickets_button {
+    border: solid 5px;
+    border-top-color: #555555;
+    border-left-color: #222222;
+}
+
+.buy_tickets_button a {
+    text-decoration:none;
+    color: black;
+}
+
+#contact_section {
+    padding-bottom: 10vh;
+}
+
+#email_input {
+    padding-left: 5vw
+}
+
+#email_input input {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    height: 4vh;
+}
+
+#email_content {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    height: 50vh;
+    width: 80vw;
+    resize:none;        
+}
+
+#email_content {
+    margin-left: 5vw;
+}
+
+#contact_section p {
+    padding-left: 5vw;
+    padding-top: 3vh;
 }
