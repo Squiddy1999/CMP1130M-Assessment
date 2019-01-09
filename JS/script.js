@@ -9,7 +9,7 @@ $(document).ready(function () {
     var data = JSON.parse(spotifyJSON);
     //console.log(data);
     items = data.items;
-    var audioObject;
+    
 
     $.each(items, function (index) {
         var id = items[index].id;
@@ -17,13 +17,15 @@ $(document).ready(function () {
         var track = items[index].preview_url;        
     })
 
-    //audioObject = new Audio("https://p.scdn.co/mp3-preview/fa8bcc44b75078b9378ab82d7922dc7b1403ee77?cid=774b29d4f13844c495f206cafdad9c86");
-    
-
-
     nowPlaying = "null";
     customiserBtn();
     musicPreview();
+    $("#email_submit").click(function() {
+        console.log("Clicked");
+        contactForm();
+        
+    })
+    customiser();
     console.log("Window Ready");
 })
 
@@ -37,6 +39,7 @@ function customiserBtn() {
 }
 
 function musicPreview() {
+    var audioObject;
     $(".song").click(function () {
         if (nowPlaying == "null") {
             songItem = $(this);
@@ -45,6 +48,7 @@ function musicPreview() {
             console.log("Now playing track "+nowPlaying);
             $(this).css({ "font-weight": "bold", "list-style-image": "url('Assets/triangle.jpg')" });
             audioObject = new Audio(items[parseInt(nowPlaying, 10) - 1].preview_url);
+            audioObject.volume = 0.12;
             audioObject.play();
         }
         else {
@@ -55,9 +59,40 @@ function musicPreview() {
             nowPlaying = nowPlaying.substring(4);
             console.log("Now playing track "+nowPlaying);
             $(this).css({"font-weight": "bold","list-style-image": "url('Assets/triangle.jpg')"});
-            audioObject = new Audio(items[parseInt(nowPlaying,10)-1].preview_url);
+            audioObject = new Audio(items[parseInt(nowPlaying, 10) - 1].preview_url);
+            audioObject.volume = 0.12;
             audioObject.play();
         }
 
     });
+}
+
+function contactForm() {
+    var email = $("email_input");
+    var content = $("email_content")
+    $("#email_box").val("");
+    $("#email_content").val("");
+}
+
+function customiser() {
+    $("#front_image_choice").change(function () {
+        console.log($("#front_image_choice").val())
+        $("#front_image").attr({
+            src: $("#front_image_choice").val()
+        });
+    })
+    
+
+    $("#custom_track_list select").change(function () {
+        $.each((currentSelector = $("#custom_track_list select")), function (index) {
+            var songGet = "#custom" + (index + 1);
+            var htmlInsert = "#track" + (index + 1);
+            $(htmlInsert).val($(songGet).val());
+            console.log($(songGet).val(), index, songGet, htmlInsert);
+            $(htmlInsert).text($(songGet).val());
+            console.log($("#track1").text());
+            
+        });
+    })
+    
 }
