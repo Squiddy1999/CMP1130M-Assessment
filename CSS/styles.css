@@ -428,7 +428,7 @@ input[type=submit] {
 @media screen and (max-width: 1440px) {
 
     body {
-        font-size: 4px;
+        font-size: 10px;
     }
 
     header {
@@ -527,14 +527,13 @@ input[type=submit] {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0;
-        width: 50%;
+        width: 95%;
     }
 
         .flexslider .slides img {
             display: block;
             width: 100%;
             height: auto;
-            max-height: 100%;
             max-width: 1440px;
         }
 
@@ -555,11 +554,11 @@ input[type=submit] {
     }
 
     #about_section h1 {
-        font-size: 12px;
+        font-size: 3vh;
     }
 
     #about_section p {
-        font-size: 8px;
+        font-size: 2.3vh;
     }
 
     #listen_section {
@@ -570,31 +569,32 @@ input[type=submit] {
         border-bottom: solid;
         overflow: auto;
         margin-top: 10px;
+        padding: 0px;
     }
 
     #listen_section h1 {
-        font-size: 12px;
+        font-size: 3vh;
     }
 
-        #listen_section img {
-            float: left;
-            display: inline-block;
-            width: 17.5vw;
-            height: 17.5vw;
-            padding-left: 1vw;
-        }
+    #listen_section img {
+        float: left;
+        display: inline-block;
+        width: 17.5vh;
+        height: 17.5vh;
+        padding-left: 1vw;
+    }
 
-        #listen_section ul {
-            float: left;
-            display: inline-block;
-            padding-left: 5vw;
-            list-style: none;
-            font-size: 1.25vw
-        }
+    #listen_section ul {
+        float: left;
+        display: inline-block;
+        padding-left: 5vw;
+        list-style: none;
+        font-size: 2vh
+    }
 
-        #listen_section li {
-            padding-bottom: 8px;
-        }
+    #listen_section li {
+        padding-bottom: 8px;
+    }
 
     .pointer_cursor {
         cursor: pointer;
