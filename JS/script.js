@@ -25,6 +25,7 @@ $(document).ready(function () {
         contactForm();
         
     })
+    mobileMenu();
     customiser();
     console.log("Window Ready");
 })
@@ -95,4 +96,11 @@ function customiser() {
         });
     })
     
+}
+
+function mobileMenu() {
+    $("#mobile_menu_button").click(function () {
+        $("#mobile_nav").css("display", "inline-block");
+        console.log("Click");
+    });    
 }

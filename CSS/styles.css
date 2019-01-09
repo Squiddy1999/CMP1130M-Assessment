@@ -24,6 +24,14 @@ header {
     border-top: solid;
 }
 
+#mobile_nav {
+    display: none;
+}
+
+#mobile_menu_button {
+    display:none;
+}
+
 #nav_menu {
     display: block;
     width: 100%;
@@ -197,11 +205,19 @@ nav li a {
     border-color: #242325
 }
 
+#music_heading_mobile {
+    display:none;
+}
+
 #merchTable {
     width: 100%;
     height: auto;
     height: auto;
     text-align: center;
+}
+
+#merch_heading_mobile {
+    display:none;
 }
 
 #merchTable td img {
@@ -443,6 +459,30 @@ input[type=submit] {
         border-top: solid;
     }
 
+    #mobile_nav {
+        font: 8vh CubanoRegular, Arial, Helvetica, Sans-Serif;
+        position: absolute;
+        display: none;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #mobile_nav li {
+        padding: 0.5vh;
+        margin-bottom: 1.5vh;
+        border: solid 10px;
+        background-color: #DC965A;
+        width: 90vw;
+        text-align: center;
+    }
+
+    #mobile_nav a {
+        text-decoration: none;
+        color: black
+    }
+
     #nav_menu {
         display: block;
         width: 100%;
@@ -478,7 +518,7 @@ input[type=submit] {
         }
 
     #logo {
-        display: block;
+        display: none;
         float: left;
         top: 1%;
         height: 100%;
@@ -503,7 +543,7 @@ input[type=submit] {
     }
 
     #slideshow {
-        display: block;
+        display: inline-block;
         margin: auto;
         width: 100%;
         height: auto;
@@ -517,17 +557,13 @@ input[type=submit] {
 
     .slideshow_picture {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         width: 50%;
     }
 
     .flexslider {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 0;
-        width: 95%;
+        width: 70%;
     }
 
         .flexslider .slides img {
@@ -539,6 +575,15 @@ input[type=submit] {
 
     .flex-control-nav {
         bottom: 20px;
+    }
+
+    #mobile_menu_button {
+        display: block;
+        width: 8vh;
+        height: 8vh;
+        position: absolute;
+        left: 85vw;
+        z-index: 2;
     }
 
     #about_section {
@@ -600,42 +645,73 @@ input[type=submit] {
         cursor: pointer;
     }
 
-    .music_section {
-        margin-top: 1000px;
+    #music_section {
+        margin-top: 0px;;
+        padding:0px;
     }
 
     #musicTable {
         width: 100%;
         height: auto;
         height: auto;
-        text-align: center;
+        table-layout: fixed;
+        width: 100%;
     }
 
-        #musicTable td {
-            height: 42%;
-        }
+    #musicTable td {
+        height: 42%;
+    }
+    #music_heading {
+        display: none;
+    }
 
-            #musicTable td img {
-                width: 300px;
-                height: 300px;
-                border: groove;
-                border-color: #242325
-            }
+    #music_heading_mobile {
+        display: block;
+        font: 10vh CubanoRegular, Arial, Helvetica, Sans-Serif;
+        padding:0px;
+        margin-top:0px;
+        margin-bottom: 10vh;
+
+    }
+
+    #musicTable td img {
+        width: 30vh;
+        height: 30vh;
+        border: 10px groove;
+        border-color: #141315;
+    }
 
     #merchTable {
-        width: 100%;
-        height: auto;
-        height: auto;
-        text-align: center;
+        display: none;
     }
 
-        #merchTable td img {
-            width: auto;
-            height: 30vh;
-            border: groove;
-            border-color: #242325;
-            padding: 10px;
-        }
+    #merch_heading {
+        display: none;
+    }
+
+    #merch_heading_mobile {
+        display: block;
+        font: 10vh CubanoRegular, Arial, Helvetica, Sans-Serif;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 1vh;
+    }
+
+    #merchTable td img {
+        display:none;
+        border: none;
+    }
+
+    #mobile_pictures {
+        display: block;
+        width: 100%;
+    }
+
+    #mobile_pictures img {
+        width: 80vw;
+        margin-left: 10vw;
+        border: 5px solid;
+    }
 
     #create_album_button_section h1 {
         text-align: center;
@@ -662,6 +738,7 @@ input[type=submit] {
 
     #concerts_section {
         overflow: hidden;
+        height: 99vh;
     }
 
         #concerts_section table {
@@ -690,7 +767,7 @@ input[type=submit] {
     }
 
     .venue {
-        padding-right: 40vw;
+        padding-right: 8vw;
         color: #CC864A;
         border-bottom: solid;
     }
