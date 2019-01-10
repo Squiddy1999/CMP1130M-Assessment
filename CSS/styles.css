@@ -851,21 +851,24 @@ input[type=submit] {
     }
 
     #front_preview {
-        width: 30vw;
+        width: 100%;
+        float: none;
+
     }
 
     #front_image {
         padding-left: 10px;
-        width: 28vw;
-        height: 28vw;
+        width: 80vw;
+        height: 80vw;
     }
 
     #back_preview {
-        width: 30vw;
+        width: 100%;
+        float:none;
     }
 
     #custom_track_list {
-        width: 30vw;
+        width: 100%;;
     }
 
     .custom_section {
@@ -890,29 +893,32 @@ input[type=submit] {
     }
 
     #custom_track_list li {
-        padding-bottom: 2vh;
+        padding-bottom: 1vh;
     }
 
     #back_image {
         float: left;
         padding-left: 10px;
-        width: 28vw;
-        height: 28vw;
+        width: 80vw;
+        height: 80vw;
     }
 
     select {
         font-size: 10vh;
-        height: 2vh;
+        height: 4vh;
         width: 20vw;
+        font: 1.2rem CubanoRegular, Arial, Helvetica, Sans-Serif;
     }
 
     #back_preview li {
         height: 2vw;
-        font-size: 1.1vw;
+        font-size: 4vw;
         font-weight: bold;
         color: #DC965A;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
+        padding-bottom: 3vh;
+        padding-left: 18vw;
     }
 
     #back_preview ul {
@@ -927,10 +933,6 @@ input[type=submit] {
     #track_list_preview {
         list-style: none;
         position: absolute;
-    }
-
-    select {
-        font: 1.2rem CubanoRegular, Arial, Helvetica, Sans-Serif;
     }
 
     input[type=submit] {
