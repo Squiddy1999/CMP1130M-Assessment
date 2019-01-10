@@ -439,8 +439,9 @@ input[type=submit] {
 }
 
 iframe {
-    padding: 1vw;
-    padding-bottom: 4vh;
+    margin: 1vw;
+    margin-bottom: 4vh;
+    margin-left: 30%;
     left: 10vw;
 }
 
@@ -943,6 +944,14 @@ iframe {
 
     input[type=submit] {
         font: 1.2rem CubanoRegular, Arial, Helvetica, Sans-Serif;
+    }
+
+    iframe {
+        margin: 0vw;
+        margin-bottom: 4vh;
+        margin-left: 0px;
+        width: 100%;
+        height: auto;
     }
 }
 
