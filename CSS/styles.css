@@ -460,7 +460,7 @@ input[type=submit] {
     }
 
     #mobile_nav {
-        font: 8vh CubanoRegular, Arial, Helvetica, Sans-Serif;
+        font: 7vh CubanoRegular, Arial, Helvetica, Sans-Serif;
         position: absolute;
         display: none;
         z-index: 10;
@@ -470,12 +470,12 @@ input[type=submit] {
     }
 
     #mobile_nav li {
-        padding: 0.5vh;
+        padding: 0vh;
         padding-top :0px;
         margin-bottom: 1vh;
         border: solid 10px;
         background-color: #DC965A;
-        width: 90vw;
+        width: 70vw;
         text-align: center;
         list-style: none;
     }
