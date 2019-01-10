@@ -855,8 +855,8 @@ input[type=submit] {
 
     #front_image {
         padding-left: 10px;
-        width: 23vw;
-        height: 23vw;
+        width: 28vw;
+        height: 28vw;
     }
 
     #back_preview {
@@ -895,8 +895,14 @@ input[type=submit] {
     #back_image {
         float: left;
         padding-left: 10px;
-        width: 23vw;
-        height: 23vw;
+        width: 28vw;
+        height: 28vw;
+    }
+
+    select {
+        font-size: 10vh;
+        height: 2vh;
+        width: 20vw;
     }
 
     #back_preview li {
@@ -910,6 +916,7 @@ input[type=submit] {
 
     #back_preview ul {
         left: 9vw;
+        font-size: 2vw;
     }
 
     #back_preview_container {
