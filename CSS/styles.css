@@ -438,6 +438,12 @@ input[type=submit] {
     font: 1.2rem CubanoRegular, Arial, Helvetica, Sans-Serif;
 }
 
+iframe {
+    padding: 1vw;
+    padding-bottom: 4vh;
+    left: 10vw;
+}
+
 
 
 
