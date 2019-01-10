@@ -477,6 +477,7 @@ input[type=submit] {
         background-color: #DC965A;
         width: 90vw;
         text-align: center;
+        list-style: none;
     }
 
     #mobile_nav ul {
